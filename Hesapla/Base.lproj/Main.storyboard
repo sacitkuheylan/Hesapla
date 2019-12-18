@@ -147,11 +147,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="receipt" translatesAutoresizingMaskIntoConstraints="NO" id="wQP-WG-MNW">
+                                <rect key="frame" x="87" y="273" width="240" height="128"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.054901960784313725" green="0.58431372549019611" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="j52-IZ-nEP" firstAttribute="centerX" secondItem="Q9O-ub-Zqd" secondAttribute="centerX" id="Q5G-Ln-V5y"/>
-                            <constraint firstItem="j52-IZ-nEP" firstAttribute="centerY" secondItem="Q9O-ub-Zqd" secondAttribute="centerY" id="inD-um-c9n"/>
+                            <constraint firstItem="j52-IZ-nEP" firstAttribute="top" secondItem="wQP-WG-MNW" secondAttribute="bottom" constant="8" id="7Ow-hZ-fq2"/>
+                            <constraint firstItem="wQP-WG-MNW" firstAttribute="leading" secondItem="S3H-qH-TCy" secondAttribute="leading" constant="87" id="AUZ-RB-C3P"/>
+                            <constraint firstItem="j52-IZ-nEP" firstAttribute="centerY" secondItem="Q9O-ub-Zqd" secondAttribute="centerY" id="RDy-hq-G82"/>
+                            <constraint firstItem="S3H-qH-TCy" firstAttribute="trailing" secondItem="wQP-WG-MNW" secondAttribute="trailing" constant="87" id="S2u-ii-lWp"/>
+                            <constraint firstItem="j52-IZ-nEP" firstAttribute="centerX" secondItem="Q9O-ub-Zqd" secondAttribute="centerX" id="ma0-G0-mpz"/>
+                            <constraint firstItem="wQP-WG-MNW" firstAttribute="top" secondItem="S3H-qH-TCy" secondAttribute="top" constant="273" id="pJm-Hm-7kg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="S3H-qH-TCy"/>
                     </view>
@@ -161,7 +168,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b8f-W8-1Tr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1046" y="115"/>
+            <point key="canvasLocation" x="1044.9275362318842" y="114.50892857142857"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="receipt" width="256" height="256"/>
+    </resources>
 </document>

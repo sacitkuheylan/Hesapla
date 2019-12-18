@@ -58,7 +58,12 @@ class ViewController: UIViewController {
     
     @IBAction func calculateButtonPressed(_ sender: Any) {
         amount = Double(totalAmountField.text!)!
-        result = (amount + (amount * tipAmount)) / Double(personCount)
+        if tipAmount != 1 {
+            result = (amount + (amount * tipAmount)) / Double(personCount)
+        }
+        else {
+            result = (amount) / Double(personCount)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
